@@ -35,13 +35,9 @@ prioritize <- function(
       # intermediate reference values
       unconserved <- apply(data, 2, function(x) x * (1-status)) # slack
       branch_sum <- sum(branch_lengths) # total tree length
-      pres_sum <- apply(data, 2, sum, na.rm=T) # range sizes
       sites <- 1:length(status) # site IDs
       
       # initialize values to be modified at each step
-      branch_benefit_i <- data %>%
-            apply(2, function(x) sum(x * status, na.rm=T)) %>%
-            benefit(lambda=lambda)
       status_i <- status
       rank <- rep(NA, length(status_i))
       selected <- c()
@@ -52,7 +48,7 @@ prioritize <- function(
             writeLines(paste("step", i, "of", length(rank)))
             
             # total conservation benefit
-            branch_status_i <- apply(data, 2, function(x) sum(x * status_i, na.rm=T)) / pres_sum
+            branch_status_i <- apply(data, 2, function(x) sum(x * status_i, na.rm=T))
             branch_benefit_i <- benefit(branch_status_i, lambda=lambda)
             prop_0 <- sum(branch_benefit_i * branch_lengths) / branch_sum
             
