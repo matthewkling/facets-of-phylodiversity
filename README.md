@@ -1,6 +1,8 @@
 # Facets of phylodiversity
 
-This repository contains supporting material associated with the study entitled "Facets of phylodiversity: parsing the value of anagenesis, cladogenesis, and evolutionary time in spatial conservation prioritization," currently in review:
+This repository contains supporting material associated with the study: 
+
+Kling, M., B. Mishler, A. Thornhill, B. Baldwin, and D. Ackerly (2018). Facets of phylodiversity: evolutionary diversification, divergence, and survival as conservation targets. *Philosophical Transactions of the Royal Society B*, DOI: 10.1098/rstb.2017.0397
 
 * A raster file containing the dataset we developed representing current [land conservation status](protection_status.tif) on a 0--1 scale, at 810m grain size. 
 * An R script with functions implementing our [reserve selection algortihm](prioritize.R).
@@ -8,4 +10,4 @@ This repository contains supporting material associated with the study entitled 
 
 Our analysis was based on previously published input datasets that are also available online, including [herbarium records](https://doi.org/10.6078/D1KX0V), [phylogenetic trees](https://doi.org/10.6078/D1VD4P), and [species distribution model](https://doi.org/10.6078/D1QQ2S) scripts.
 
-The authors of this study are Matthew Kling, Brent Mishler, Andrew Thornhill, Bruce Baldwin, and David Ackerly.
+![phylodiversity cube](pd_cube.png)
