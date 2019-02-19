@@ -2,7 +2,7 @@
 
 This repository contains supporting material associated with the study: 
 
-Kling, M., B. Mishler, A. Thornhill, B. Baldwin, and D. Ackerly (2018). Facets of phylodiversity: evolutionary diversification, divergence, and survival as conservation targets. *Philosophical Transactions of the Royal Society B*, DOI: 10.1098/rstb.2017.0397
+[Kling, M., B. Mishler, A. Thornhill, B. Baldwin, and D. Ackerly (2018). Facets of phylodiversity: evolutionary diversification, divergence, and survival as conservation targets. *Philosophical Transactions of the Royal Society B*](https://royalsocietypublishing.org/doi/full/10.1098/rstb.2017.0397).
 
 * A raster file of the dataset we developed representing current [land conservation status](protection_status.tif) on a 0--1 scale, at 810m grain size. 
 * An R script with functions implementing our [reserve selection algortihm](prioritize.R).
